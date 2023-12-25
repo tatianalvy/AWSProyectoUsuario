@@ -1,0 +1,29 @@
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: ''
+    url: jdbc:mysql://localhost:3306/awsusuario
+    username: root
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: create
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+      
+cloud:
+  aws:
+    region:
+      static: us-east-2
+    stack:
+      auto: false
+    credentials:
+      access-key: AKIA3572NVIAF7CZA7HM
+      secret-key: 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
